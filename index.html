@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheezy Bites Fast Food</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#102f22;
+color:#fff;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+color:#ffd54f;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ffc107;
+color:#000;
+text-decoration:none;
+font-weight:600;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0a1f16;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#ffd54f;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#ffd54f;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text p{
+line-height:1.8;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#183f2e;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#ffd54f;
+margin-bottom:10px;
+}
+
+.card ul{
+list-style:none;
+line-height:2;
+}
+
+.deals{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.deal-box{
+background:#ffc107;
+color:#000;
+padding:25px;
+border-radius:15px;
+}
+
+.deal-box h3{
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-box{
+background:#183f2e;
+padding:25px;
+border-radius:15px;
+}
+
+.contact-box p{
+margin:12px 0;
+}
+
+footer{
+background:#08140e;
+padding:25px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">CHEEZY BITES</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#deals">Deals</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header id="home">
+<div class="hero">
+<h1>CHEEZY BITES</h1>
+<p>Delicious Pizza, Burgers, Wraps & Fast Food</p>
+
+<a href="https://wa.me/923053536111" class="btn">
+Order on WhatsApp
+</a>
+</div>
+</header>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+<div class="about-text">
+<p>
+Welcome to Cheezy Bites Fast Food.
+We serve delicious pizzas, burgers,
+wraps, wings, fries, pasta and shakes.
+Our mission is to provide quality food,
+great taste and excellent customer service.
+</p>
+
+<br>
+
+<p>
+Visit us at Rahim Market Block F,
+Shop No 12-13 Near Jamrud Bazar and enjoy
+the best fast food experience.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="menu">
+
+<h2 class="section-title">Our Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<h3>Pizza</h3>
+<ul>
+<li>Chicken Tikka</li>
+<li>Chicken Fajita</li>
+<li>Smoked Chicken</li>
+<li>Beef Pepperoni</li>
+<li>Vegetarian Pizza</li>
+<li>Cheese Lover</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Special Pizza</h3>
+<ul>
+<li>Cheezy Bites Special</li>
+<li>Crown Crust</li>
+<li>Creamy Melt</li>
+<li>Kababish</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Burgers</h3>
+<ul>
+<li>Zinger Burger</li>
+<li>Zinger Cheese Burger</li>
+<li>Chicken Burger</li>
+<li>Tower Burger</li>
+<li>Beef Burger</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Wraps</h3>
+<ul>
+<li>Zinger Wrap</li>
+<li>Grill Wrap</li>
+<li>Chicken Shawarma</li>
+<li>Pizza Roll</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Wings</h3>
+<ul>
+<li>6 PCS Wings</li>
+<li>10 PCS Wings</li>
+<li>Mayo Wings</li>
+<li>Peri Peri Wings</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Fries</h3>
+<ul>
+<li>Regular Fries</li>
+<li>Masala Fries</li>
+<li>Pizza Fries</li>
+<li>Loaded Fries</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Pasta</h3>
+<ul>
+<li>Alfredo Pasta</li>
+<li>Italian Pasta</li>
+<li>Lasagna</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Shakes</h3>
+<ul>
+<li>Mango Shake</li>
+<li>Banana Shake</li>
+<li>Strawberry Shake</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="deals">
+
+<h2 class="section-title">Special Deals</h2>
+
+<div class="deals">
+
+<div class="deal-box">
+<h3>Family Deal 1</h3>
+<p>Large Pizza</p>
+<p>2 Crispy Burgers</p>
+<p>Chicken Fries</p>
+<p>1 Liter Drink</p>
+</div>
+
+<div class="deal-box">
+<h3>Family Deal 2</h3>
+<p>Large Pizza</p>
+<p>4 Zinger Burgers</p>
+<p>1.5 Liter Drink</p>
+</div>
+
+<div class="deal-box">
+<h3>Zinger Deal</h3>
+<p>2 Zinger Burgers</p>
+<p>2 Regular Fries</p>
+<p>Soft Drink</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Food Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<div class="contact-box">
+<h3>Contact Information</h3>
+
+<p>📞 0305 3536111</p>
+
+<p>
+📍 Rahim Market Block F,
+Shop No 12-13,
+Near Jamrud Bazar
+</p>
+
+<p>⏰ Opening Time: 02:00 PM</p>
+<p>⏰ Closing Time: 03:00 AM</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Why Choose Us?</h3>
+
+<p>✓ Fresh Ingredients</p>
+<p>✓ Fast Delivery</p>
+<p>✓ Affordable Prices</p>
+<p>✓ Family Friendly Environment</p>
+<p>✓ Quality Taste Guaranteed</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<h3>CHEEZY BITES FAST FOOD</h3>
+<p>Serving Delicious Food Every Day</p>
+<br>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/923053536111">
+💬
+</a>
+
+</body>
+  </html>
